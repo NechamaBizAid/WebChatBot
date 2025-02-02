@@ -107,7 +107,8 @@
             flex-grow: 1; /* תופס את כל המקום שנשאר */
             overflow-y: auto; /* גלילה אנכית */
             padding: 10px;
-            direction: ltr;
+            direction: rtl;
+            text-align: left;
         }
 
         /* שורת ההקלדה נשארת קבועה בתחתית */
@@ -151,7 +152,7 @@
                 // Specifies style options to customize the Web Chat canvas.
                 // Please visit https://microsoft.github.io/BotFramework-WebChat for customization samples.
                 const styleOptions = {
-                    backgroundColor: '#f0f0f0',
+                    backgroundColor: 'whitesmoke',
                     hideUploadButton: true,
                     rtl: true, // כיוון הטקסט מימין לשמאל
                     botAvatarImage: 'https://grs.ekmd.huji.ac.il/SiteAssets/HUJI_Logo_Round_White_Back.png',
@@ -159,7 +160,9 @@
                     userAvatarBackgroundColor: 'gray',
                     botAvatarBackgroundColor: 'darkgray',
                     bubbleBorderRadius:'10px',
-                    bubbleFromUserBorderRadius:'10px'
+                    bubbleFromUserBorderRadius: '10px',
+                    //bubbleBackground: '#9FE2BF',
+                    bubbleFromUserBackground: '#C0C0C0',
 
                 };
 
